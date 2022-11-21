@@ -39,6 +39,7 @@
   text-align: center;
   text-decoration: none;
 }
+/* CART */
 .cart {
   margin-right: 2rem;
 }
@@ -49,8 +50,8 @@
   color: white;
   font-weight: 400;
   text-align: center;
+  
 }
-
 .cart-text span {
   display: inline-block;
   width: 20px;
@@ -64,7 +65,7 @@
   top: -19px;
   font-size: 1rem;
 }
-
+/* CART DIALOG */
 .cart_dialog {
   position: fixed;
   top: -45%;
@@ -72,7 +73,11 @@
   width: 20%;
   height: 20%;
   text-align: center;
+  border: none;
+  background-color: #fff;
+  z-index: 1;
 }
+
 .empty_cart_title {
   font-size: 2rem;
   font-weight: 600;
@@ -88,12 +93,26 @@
 }
 .cart_dialog2 {
   background-color: #fff;
-  width: 20%;
-  height: 20%;
-  left: 75%;
-  top: -55%;
-  z-index: 1;
+  border: none;
+  left: 55%;
+  top: -65%;
   position: fixed;
+  font-size: 1rem;
+}
+.cartRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+.cartHeader {
+  font-weight: bold;
+}
+.cartTotal {
+  font-weight: bold;
+  text-align: right;
 }
 .cart_title {
   font-size: 1rem;
@@ -317,7 +336,7 @@ dialog::backdrop {
   margin: 1rem auto;
 }
 .send_message_btn:hover {
-  border: 1px solid rgb(12, 184, 12);
+  border: 1px solid f5ae18;
   background-color: #ffffff;
-  color: rgb(12, 184, 12);
+  color: f5ae18;
 }

@@ -51,26 +51,17 @@
           onclick="closeModal(); return false"
           ><i class="fa-solid fa-xmark"></i
         ></a>
-        <article class="your_cart2">
-          <h3 class="cart_title" id="inYourCart">In your cart</h3>
+        
+        <article class="cartRow cartHeader">
+          <p>Product name</p>
+          <p>Product price</p>
         </article>
-        <hr />
-        <table class="product_amount">
-          <tr>
-            <th class="product_amount_title">Product</th>
-            <th class="product_amount_title">Price</th>
-          </tr>
-          <tr>
-            <td id="name">photo 1</td>
-            <td id="product_price">100</td>
-          </tr>
-          <tr>
-            <td id="name">photo 2</td>
-            <td id="product_price">80</td>
-          </tr>
-        </table>
-        <hr />
-        <p class="total">total:</p>
+
+      <article class="cartTotal">
+          Total sum:
+          €<span class="cartTotalValue">0</span>
+      </article>
+
       </dialog>
     </header>
     <section class="main_photo">
@@ -130,7 +121,8 @@
       </dialog>
     </footer>
     <script src="products.js"></script>
-    <script src="productsCards.js"></script>
     <script src="main2.js"></script>
+    <script src="productsCards.js"></script>
+    <script src="basket.js" ></script>
   </body>
 </html>
