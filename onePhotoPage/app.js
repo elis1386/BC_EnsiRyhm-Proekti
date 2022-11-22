@@ -2,7 +2,7 @@ const pathToImages = 'image';
 const pathToProductsImages = `${pathToImages}/gallery`;
 
 
-function currentPhotoMarkup(product) {
+function currentPhoto(product) {
   return `
 <figure class="photo">
     <img src="${pathToProductsImages}/${product.image}" alt="" />
@@ -16,7 +16,7 @@ function currentPhotoMarkup(product) {
         <i class="fa-solid fa-star"></i>
         <i class="fa-regular fa-star"></i>
         <p class="price">${product.price}</p>
-        <a href="" class="add_to_cart">Add to cart</a>
+        <a href="../cartPage/index.html?id=${product.id}" class="add_to_cart" id="addToCart">Add to cart</a>
     </article>
 </article>
     `;
@@ -29,9 +29,12 @@ function insertCurrentPhoto() {
   for (let product of products) {
     if (product.id == productId) {
         console.log(product,productId)
-      item.insertAdjacentHTML("afterbegin", currentPhotoMarkup(product));
+      item.insertAdjacentHTML("afterbegin", currentPhoto(product));
       break;
     }
   }
 }
 insertCurrentPhoto()
+
+
+
