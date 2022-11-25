@@ -1,15 +1,14 @@
 /* PRODUCTS CARDS ADD TO THE PAGE */
-const pathToImages = "image";
-const pathToProductsImages = `${pathToImages}/gallery`;
-const items = document.querySelector("#gallery");
+const pathToProductsImages = "food";
+const items = document.querySelector("#food_gallery");
 
 
-function renderProducts(products)
+function renderFoodProducts(products)
 {
   products.forEach( product => {
     items.innerHTML += `
     <figure class="item">
-    <a href="../onePhotoPage/index.html?id=${product.id}" class="cart">
+    <a href="../foodScreenPhoto/index.html?id=${product.id}" class="cart">
       <img src="${pathToProductsImages}/${product.image}" class="item__img" alt="${product.name}" />
     </a>
     <figcaption class="add_to_cart" data-productId="${product.id}">
@@ -35,7 +34,7 @@ function addedProductHandler(event) {
   console.log(productId);
 }
 
-renderProducts(products, items)
+renderFoodProducts(products, items)
 
 
 

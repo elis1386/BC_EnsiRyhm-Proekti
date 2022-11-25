@@ -1,3 +1,5 @@
+/* Array of ojects for rendering */
+
 const products = [
     {
       id: 0,

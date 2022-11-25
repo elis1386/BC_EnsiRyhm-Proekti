@@ -1,11 +1,19 @@
-  
-  /* MODAL FUNCTIONS */
+  /* on this page all function wich shoul be in very pages */
 
+  /* MODAL FUNCTIONS */
   function sendMessageModal() {
     const dialog = document.querySelector("#dialog");
     dialog.showModal();
   }
 
+  /* COUNTING @ADD PRODUCT@ PRODUCTS  */
+  let count = document.querySelector('#count')
+
+  function increaseCount()
+  {
+    count.textContent++
+    console.log('click');
+  }
 
   function showCartModal()
   {   
@@ -21,13 +29,14 @@
     }
   }
 
-
   function closeModal()
   {
       const closeModal = document.querySelector('#clodeModal')
       closeModal.closeModal()
   }
 
+  
+  
   
   
   
